@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3d5db;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #f7dfef;
+  color: #663147;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 3px solid #be7f7c;
+}
+
+nav {
+  background-color: #ffffff;
+  border-bottom: 2px solid #be7f7c;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #663147;
+  font-size: 15px;
+  display: inline-block;
+  padding: 8px 10px;
+}
+
+nav ul li a:hover {
+  color: #be7f7c;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+section {
+  background-color: #fff;
+  border: 2px solid #be7f7c;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+#perfil img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+  border: 3px solid #be7f7c;
+}
+
+.status-box {
+  width: 22px;
+  height: 22px;
+  margin: 10px 0;
+  border: 2px solid #be7f7c;
+}
+
+.disponivel {
+  background-color: #b3ebf2;
+}
+
+.ocupado {
+  background-color: #dea5a4;
+}
+
+button {
+  padding: 8px 12px;
+  border: 2px solid #be7f7c;
+  background-color: #f7dfef;
+  cursor: pointer;
+  margin-top: 8px;
+  color: #663147;
+}
+
+button:hover {
+  background-color: #ffe6f0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 4px 0;
+}
+
+.cardProjeto {
+  text-align: center;
+  border: 1px solid #be7f7c;
+  padding: 10px;
+}
+
+.cardProjeto img {
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.interacao {
+  display: flex;
+  justify-content: space-around;
+  margin: 8px 0;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #be7f7c;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.comentarioUsuario {
+  background-color: #fdeff4;
+  border-left: 4px solid #be7f7c;
+  padding: 6px;
+  margin-top: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 12px;
+  border-top: 2px solid #be7f7c;
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+#imgProjeto {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#erroMensagem {
+  color: red;
+  margin-top: 10px;
+  padding: 8px;
+}
