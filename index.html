@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arquivo padrão</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Exercício 3: Manipulação do cabeçalho -->
+    <header>
+      <h1 id="titulo-painel">Dashboard</h1>
+      <div class="descricao-header">Descrição do Painel</div>
+      <p>Olá usuário</p>
+      <p>Bem-vindo</p>
+    </header>
+
+    <!-- Exercício 4: Navegação na Sidebar -->
+    <nav class="navIcone">
+      <ul id="menuPrincipal">
+        <li>
+          <a href="#perfil" title="Perfil">
+            <i class="fas fa-user-circle fa-2x"></i>
+            <span>Perfil</span>
+          </a>
+        </li>
+        <li>
+          <a href="#status" title="Status">
+            <i class="fas fa-signal fa-2x"></i>
+            <span>Status</span>
+          </a>
+        </li>
+        <li>
+          <a href="#depoimentos" title="Depoimentos">
+            <i class="fas fa-comment-dots fa-2x"></i>
+            <span>Depoimentos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#backlog" title="Adicionar Tarefa">
+            <i class="fas fa-list-ul fa-2x"></i>
+            <span>Adicionar Tarefa</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projetos" title="Projetos">
+            <i class="fas fa-project-diagram fa-2x"></i>
+            <span>Projetos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#clientes" title="Clientes">
+            <i class="fas fa-building fa-2x"></i>
+            <span>Clientes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#parceiros" title="Parceiros">
+            <i class="fas fa-users fa-2x"></i>
+            <span>Parceiros</span>
+          </a>
+        </li>
+        <li>
+          <a href="#cobranca" title="Cobrança">
+            <i class="fab fa-whatsapp fa-2x"></i>
+            <span>Cobrança</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Exercício 5: Gestão de Avatar -->
+    <main>
+      <section id="perfil">
+        <h2>Avatar do Usuário</h2>
+        <img
+          id="avatarPerfil"
+          src="https://i.pravatar.cc/100"
+          alt="Avatar do Usuário"
+          width="100"
+        />
+      </section>
+
+      <!-- Exercício 6: Status de Disponibilidade -->
+      <section id="status">
+        <h2>Status de Disponibilidade</h2>
+        <div class="status-box" id="blocoStatus"></div>
+        <button id="botaoStatus">Alternar Status</button>
+      </section>
+
+      <!-- Exercício 7: Widget de Depoimentos -->
+      <section id="depoimentos">
+        <h2>Depoimentos Recentes</h2>
+        <div id="containerDepoimentos"></div>
+        <button id="botaoDepoimento">Gerar Depoimento</button>
+      </section>
+
+      <!-- Exercício 8: Gestão de Skills -->
+      <section id="skills">
+        <h2>Skills Atuais</h2>
+        <ul id="listaHabilidades">
+          <li>HTML (iniciante)</li>
+          <li>CSS (iniciante)</li>
+          <li>JS (iniciante)</li>
+          <li>Interatividade páginas web (iniciante)</li>
+          <li>Planejamento de carreira (avançado)</li>
+        </ul>
+        <button id="botaoAddSkill">Adicionar Nova Skill</button>
+        <button id="botaoRemSkill">Remover Última Skill</button>
+      </section>
+
+      <!-- Exercício 9: Contador de Visualizações -->
+      <section id="visualizacoes">
+        <h2>Visualizações</h2>
+        <p id="contadorViews">Visualizações do Perfil: 0</p>
+        <button id="botaoVerPerfil">Ver Perfil Público</button>
+      </section>
+
+      <!--Exercício 10: Segurança e Carregamento (Load Event) -->
+      <section id="informacoes">
+        <h2>Informações do Sistema</h2>
+        <p id="idioma"></p>
+        <p id="url"></p>
+      </section>
+
+      <!-- Exercício 11: Botão de Deploy -->
+      <section id="deploy">
+        <h2>Deploy de Projeto</h2>
+        <button id="botaoDeploy">Fazer Deploy</button>
+      </section>
+
+      <section id="projetos">
+        <!-- Exercício 12: Galeria de Projetos -->
+        <h2>Galeria de Projetos</h2>
+        <div class="cardProjeto" id="cardProjeto">
+          <img
+            src="avatar.png"
+            alt="avatar foto"
+            width="100%"
+            id="imgProjeto"
+          />
+          <p>Um projeto inovador entregue com mindset ágil.</p>
+          <div class="interacao">
+            <i
+              class="far fa-heart fa-lg iconeLike"
+              id="iconeLike"
+              title="Curtir"
+            ></i>
+            <i
+              class="far fa-comment fa-lg iconeComentario"
+              id="iconeComentario"
+              title="Comentar"
+            ></i>
+            <i
+              class="far fa-bookmark fa-lg iconeSalvar"
+              id="iconeSalvar"
+              title="Salvar"
+            ></i>
+          </div>
+          <p id="contadorLikes">0 Likes</p>
+          <div id="containerComentarios" class="comentarioUsuario"></div>
+        </div>
+      </section>
+
+      <!-- Exercício 13: Sprint Backlog -->
+      <section id="backlog">
+        <h2>Adicionar Tarefa</h2>
+        <input type="text" id="inputTarefa" placeholder="Nova tarefa" />
+        <button id="botaoAddTarefa">Adicionar Tarefa</button>
+        <ul id="listaTarefas"></ul>
+      </section>
+
+      <!--Exercício 14: Cadastro de Cliente Corporativo (Validação JS I)-->
+      <section id="clientes">
+        <h2>Cadastro de Cliente Corporativo</h2>
+        <form id="formCliente">
+          <input
+            type="text"
+            id="nomeEmpresa"
+            placeholder="Nome da Empresa"
+          /><br />
+          <input type="date" id="dataFundacao" /><br />
+          <input type="email" id="emailEmpresa" placeholder="Email" /><br />
+          <textarea id="descricaoEmpresa" placeholder="Descrição"></textarea
+          ><br />
+          <select id="areaAtuacao">
+            <option value="">Selecione Atuação</option>
+            <option value="vendas">Vendas</option>
+            <option value="marketing">Marketing</option>
+            <option value="aplicativos">Aplicativos</option></select
+          ><br />
+          <button type="submit">Cadastrar Cliente</button>
+        </form>
+        <div id="erroMensagem"></div>
+      </section>
+
+      <!--Exercício 15: Cadastro de Desenvolvedor Parceiro (Validação JS II) -->
+      <section id="parceiros">
+        <h2>Cadastro de Desenvolvedor Parceiro</h2>
+        <form id="formParceiro">
+          <input type="text" id="parceiroLogin" placeholder="Login" /><br />
+          <input type="number" id="parceiroIdade" placeholder="Idade" /><br />
+          <select id="parceiroGenero">
+            <option value="">Selecione Gênero</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option></select
+          ><br />
+          <label
+            ><input type="checkbox" name="musica" value="rock" /> Rock</label
+          >
+          <label><input type="checkbox" name="musica" value="mpb" /> MPB</label>
+          <label
+            ><input type="checkbox" name="musica" value="funk" /> Funk</label
+          >
+          <label><input type="checkbox" name="musica" value="pop" /> Pop</label
+          ><br />
+          <input type="password" id="parceiroSenha" placeholder="Senha" /><br />
+          <input
+            type="password"
+            id="parceiroConfirmaSenha"
+            placeholder="Confirmar Senha"
+          /><br />
+          <button type="submit">Cadastrar Parceiro</button>
+        </form>
+        <div id="erroMensagem"></div>
+      </section>
+
+      <!-- Exercício 16: Cobrança via WhatsApp -->
+      <section id="cobranca">
+        <h2>Cobrança via WhatsApp</h2>
+        <input
+          type="tel"
+          id="cobrancaTel"
+          placeholder="Telefone do Cliente"
+        /><br />
+        <textarea id="cobrancaMsg" placeholder="Mensagem de Cobrança"></textarea
+        ><br />
+        <button id="botaoEnviarCobranca">Enviar Cobrança</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>FreelanceBoard - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
